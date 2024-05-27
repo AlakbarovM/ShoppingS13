@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.proBoxMain{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .container{
+        width: 85%;
+        padding: 20px 0;
+        margin: 20px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .proBoxMainTop{
+            width: 100%;
+            display: flex;
+            align-items: center; 
+            justify-content: space-between;
+            padding: 0 0 20px 0;
+            .proBoxMainTopText{
+                display: flex;
+                align-items: center; 
+                gap: 30px;
+                p{
+                    font-weight: 500;
+                    font-size: 19px;
+                    color: gray;
+                }
+            }
+            .proBoxMainTopNav{
+                .proBoxMainTopNavHamburger{
+                    display: none;
+                }
+                ul{
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+
+                }
+                li{
+                    list-style: none;
+                    a{
+                        text-decoration: none;
+                        font-size: 14px;
+                        color: black;
+                        cursor: pointer;
+                        font-weight: 600;
+                    }
+                }
+            }
+            
+        }
+        .proBoxMainBottom{
+            
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+    }
+}
+@media screen and (max-width:768px) {
+    .proBoxMain{
+        .container{
+            width: 95%;
+            
+            .proBoxMainTop{
+                .proBoxMainTopNav{
+                    ul{
+                        display: none;
+                    }
+                    .proBoxMainTopNavHamburger{
+                        display: block;
+                    }
+                }
+            }
+            .proBoxMainBottom{
+                width: 100%;
+            }
+        }
+    }
+}

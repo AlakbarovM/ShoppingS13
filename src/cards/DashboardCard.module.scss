@@ -1,0 +1,39 @@
+.proBoxD{
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid gray;
+    padding: 10px;
+    .proBoxImgd{
+        width: 30%;
+        height: 180px;
+        img{
+            width: 100%;
+                height: 100%;
+        }
+    }
+    .proBoxTextd{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+        p{
+            color: red;
+        }
+        h1{
+            font-size: 17px;
+        }
+        span{
+            color: gray;
+            font-size: 14px;
+        }
+    }
+    .proBoxBtn{
+        width: 20%;
+        
+    }
+}

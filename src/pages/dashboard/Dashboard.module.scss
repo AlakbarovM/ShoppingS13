@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.proBoxMainD{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .container{
+        width: 95%;
+        padding: 20px 0;
+        margin: 20px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .proBoxMainTopD{
+            width: 100%;
+            display: flex;
+            align-items: center; 
+            justify-content: space-between;
+            padding: 0 0 20px 0;
+            form {
+                display: flex;
+                gap: 10px;
+                input{
+                    border: 1px solid gray;
+                    border-radius: 10px;
+                    padding: 5px;
+
+                }
+                button{
+                    width: 70px;
+                    height: 30px;
+                    border: none;
+                    background-color: rgb(199, 197, 197);
+                    border-radius: 10px;
+                    color: white;
+                    font-weight: 200;
+                }
+            }
+            .proBoxMainTopTextD{
+                display: flex;
+                align-items: center; 
+                gap: 30px;
+                p{
+                    font-weight: 500;
+                    font-size: 19px;
+                    color: gray;
+                }
+            }
+            .proBoxMainTopNavD{
+                ul{
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+
+                }
+                li{
+                    list-style: none;
+                    a{
+                        text-decoration: none;
+                        font-size: 14px;
+                        color: black;
+                        cursor: pointer;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+        .proBoxMainBottomD{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            .proBoxMainBottomSearch{
+                input{
+                    padding: 4px;
+                    border: 1px solid rgb(184, 181, 181);
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
